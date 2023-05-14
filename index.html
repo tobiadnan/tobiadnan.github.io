@@ -1,63 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-    <meta name="copyright" content="MACode ID, https://www.macodeid.com/" />
-
     <title>Tobi's Page</title>
-
     <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon" />
-
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="/assets/css/themify-icons.css"
-    />
-
+    <link rel="stylesheet" type="text/css" href="/assets/css/themify-icons.css"/>
     <link rel="stylesheet" type="text/css" href="/assets/css/bootstrap.css" />
-
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="/assets/vendor/animate/animate.css"
-    />
-
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="/assets/vendor/owl-carousel/owl.carousel.css"
-    />
-
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="/assets/vendor/perfect-scrollbar/css/perfect-scrollbar.css"
-    />
-
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="/assets/vendor/nice-select/css/nice-select.css"
-    />
-
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="/assets/vendor/fancybox/css/jquery.fancybox.min.css"
-    />
-
+    <link rel="stylesheet" type="text/css" href="/assets/vendor/animate/animate.css"/>
+    <link rel="stylesheet" type="text/css" href="/assets/vendor/owl-carousel/owl.carousel.css"/>
+    <link rel="stylesheet" type="text/css" href="/assets/vendor/perfect-scrollbar/css/perfect-scrollbar.css"/>
+    <link rel="stylesheet" type="text/css" href="/assets/vendor/nice-select/css/nice-select.css"/>
+    <link rel="stylesheet" type="text/css" href="/assets/vendor/fancybox/css/jquery.fancybox.min.css"/>
     <link rel="stylesheet" type="text/css" href="/assets/css/virtual.css" />
-
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="/assets/css/topbar.virtual.css"
-    />
+    <link rel="stylesheet" type="text/css" href="/assets/css/topbar.virtual.css"/>
   </head>
+
   <body class="theme-red">
     <!-- Back to top button -->
     <div class="btn-back_to_top">
@@ -132,10 +93,10 @@
         </div>
         <select class="custom-select d-block my-2" id="change-page">
           <option value="">Choose Page</option>
-          <option value="index">Topbar</option>
-          <option value="blog-topbar">Blog (Topbar)</option>
+          <option value="index">Home</option>
+          <option value="blog">Blog</option>
           <!-- <option value="index-2">Minibar</option> -->
-          <option value="blog-minibar">Blog (Minibar)</option>
+          <option value="portfolio">Portfolio</option>
         </select>
       </div>
     </div>
@@ -220,7 +181,7 @@
               <li><b>Lives In:</b> Karawang, West Java, Indonesia</li>
               <li><b>Gender:</b> Male</li>
             </ul>
-            <a href="cv.pdf">
+            <a href="tobi-cv.pdf">
               <button class="btn btn-theme-outline">Download CV</button>
             </a>
           </div>
@@ -398,114 +359,50 @@
           <div class="badge badge-subhead">Portfolio</div>
         </div>
         <h1 class="text-center fw-normal wow fadeInUp">What have I made?</h1>
+
+        <!-- button -->
         <div class="filterable-button py-3 wow fadeInUp" data-toggle="selected">
           <button class="btn btn-theme-outline selected" data-filter="*">
             All
           </button>
-          <button class="btn btn-theme-outline" data-filter=".apps">
-            Apps
+          <button class="btn btn-theme-outline" data-filter=".analytic">
+            Analytic
           </button>
-          <button class="btn btn-theme-outline" data-filter=".template">
-            Template
+          <button class="btn btn-theme-outline" data-filter=".web">
+            Web
           </button>
-          <button class="btn btn-theme-outline" data-filter=".ios">IOS</button>
           <button class="btn btn-theme-outline" data-filter=".ui-ux">
             UI/UX
           </button>
-          <button class="btn btn-theme-outline" data-filter=".graphic">
-            Graphic
-          </button>
-          <button class="btn btn-theme-outline" data-filter=".wireframes">
-            Wireframes
-          </button>
         </div>
+        <!-- end of button -->
 
-        <!-- <div class="gridder my-3">
-          <div class="grid-item apps wow zoomIn">
+        <!-- card content -->
+        <div class="gridder my-3">
+          <!-- analytics -->
+          <div class="grid-item ui-ux wow zoomIn">
             <div
               class="img-place"
-              data-src="/assets/img/work/work-1.jpg"
+              data-src="/assets/img/work/ui-bcs.png" 
               data-fancybox
-              data-caption="<h5 class='fg-theme'>Mobile Travel App</h5> <p>Travel, Discovery</p>"
+              data-caption="<h5 class='fg-theme'><a href='/content/uiux.html'>BCS UI Design</a></h5> <p>Inventory, Stocks</p>"
             >
-              <img src="/assets/img/work/work-1.jpg" alt="" />
+              <img src="/assets/img/work/ui-bcs.png" alt="" />
               <div class="img-caption">
-                <h5 class="fg-theme">Mobile Travel App</h5>
-                <p>Travel, Discovery</p>
+                <h5 class="fg-theme">BCS UI Design</h5>
+                <p>Inventory, Stocks</p>
               </div>
             </div>
           </div>
-          <div class="grid-item template wireframes wow zoomIn">
-            <div
-              class="img-place"
-              data-src="/assets/img/work/work-2.jpg"
-              data-fancybox
-              data-caption="<h5 class='fg-theme'>Music App</h5> <p>Musics</p>"
-            >
-              <img src="/assets/img/work/work-2.jpg" alt="" />
-              <div class="img-caption">
-                <h5 class="fg-theme">Music App</h5>
-                <p>Musics</p>
-              </div>
-            </div>
-          </div>
-          <div class="grid-item apps ios wow zoomIn">
-            <div
-              class="img-place"
-              data-src="/assets/img/work/work-3.jpg"
-              data-fancybox
-              data-caption="<h5 class='fg-theme'>Gaming Dashboard</h5> <p>Games, Streaming</p>"
-            >
-              <img src="/assets/img/work/work-3.jpg" alt="" />
-              <div class="img-caption">
-                <h5 class="fg-theme">Gaming Dashboard</h5>
-                <p>Games, Streaming</p>
-              </div>
-            </div>
-          </div>
-          <div class="grid-item graphic ui-ux wow zoomIn">
-            <div
-              class="img-place"
-              data-src="/assets/img/work/work-4.jpg"
-              data-fancybox
-              data-caption="<h5 class='fg-theme'>Drugs Delivery App</h5> <p>Health, Drugs</p>"
-            >
-              <img src="/assets/img/work/work-4.jpg" alt="" />
-              <div class="img-caption">
-                <h5 class="fg-theme">Drugs Delivery App</h5>
-                <p>Health, Drugs</p>
-              </div>
-            </div>
-          </div>
-          <div class="grid-item apps ios wow zoomIn">
-            <div
-              class="img-place"
-              data-src="/assets/img/work/work-5.jpg"
-              data-fancybox
-              data-caption="<h5 class='fg-theme'>Musics Discover</h5> <p>Musics, Dashboard</p>"
-            >
-              <img src="/assets/img/work/work-5.jpg" alt="" />
-              <div class="img-caption">
-                <h5 class="fg-theme">Musics Discover</h5>
-                <p>Musics, Dashboard</p>
-              </div>
-            </div>
-          </div>
-          <div class="grid-item graphic ui-ux wireframes wow zoomIn">
-            <div
-              class="img-place"
-              data-src="/assets/img/work/work-6.jpg"
-              data-fancybox
-              data-caption="<h5 class='fg-theme'>Game Streaming</h5> <p>Games, Streaming</p>"
-            >
-              <img src="/assets/img/work/work-6.jpg" alt="" />
-              <div class="img-caption">
-                <h5 class="fg-theme">Game Streaming</h5>
-                <p>Games, Streaming</p>
-              </div>
-            </div>
-          </div>
-        </div> -->
+          <!-- end of analytics -->
+
+          <!-- web -->
+          <!-- end of web -->
+
+          <!-- ui ux -->
+          <!-- end of ui ux -->
+        </div>
+        <!-- end of card content -->
         <!-- End gridder -->
         <div class="text-center wow fadeInUp">
           <a href="javascript:void(0)" class="btn btn-theme">Load More</a>
