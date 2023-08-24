@@ -8,7 +8,7 @@ I'm Toby. A Fresh informatics graduate with a special interest in Digital, Tech 
 
 You can learn more about me and my projects on my [Web Portfolio](https://tobiadnan.github.io/).
 
-![Portfolio Image](https://drive.google.com/file/d/1S0E0ArWx3MWAid8YHzSOPdBaboqBddkq/view?usp=sharing)
+![Portfolio Image](https://tobiadnan.github.io/content/Screenshot%202023-08-23%20144738.png)
 
 Feel free to visit my portfolio to explore the projects I've worked on.
 
