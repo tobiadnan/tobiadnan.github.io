@@ -30,5 +30,3 @@ Feel free to visit my portfolio to explore the projects I've worked on.
   <a href="https://tobiadnan.github.io/">
     <img align="left" alt="Toby | Portfolio" width="26px" src="https://www.svgrepo.com/show/474386/internet.svg" />
   </a>
-<br>
-Thank you for stopping by!
