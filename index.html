@@ -17,6 +17,19 @@
     <link rel="stylesheet" type="text/css" href="/assets/vendor/fancybox/css/jquery.fancybox.min.css"/>
     <link rel="stylesheet" type="text/css" href="/assets/css/virtual.css" />
     <link rel="stylesheet" type="text/css" href="/assets/css/topbar.virtual.css"/>
+    <style>
+      .zoom {
+        transition: transform .3s; /* Animation */
+        width: 55px;
+        height: 55px;
+        margin: 0 auto;
+      }
+      
+      .zoom:hover {
+        transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+      }
+    </style>
+    
   </head>
 
   <body class="theme-red">
@@ -198,13 +211,13 @@
                   <h5>Bachelor of Computer Science - Informatics </h5>
                   <small class="fg-theme">STMIK Rosma</small>
                   <p>
-                    •	Cumulative GPA: 3.67 of 4.0<br>
-                    •	Relevant Coursework: Data Science (Udemy), UI/UX (Udemy), Data Science Bootcamp (Binar Academy)
+                    ✅ Cumulative GPA: 3.67 of 4.0 <br>
+                    ✅ Activities and societies: Vice chairman of FKDK Rosma, PKKMB Event Committee
                   </p>
-                  
                 </div>
               </li>
           </div>
+
           <div class="col-md-6 wow fadeInRight" data-wow-delay="200ms">
             <h2 class="fw-normal">Experiences</h2>
             <ul class="timeline mt-4 pr-md-5">
@@ -212,60 +225,33 @@
                 <div class="title">2023</div>
                 <div class="details">
                   <div class="d-flex justify-content-between">
-                    <h5>Data Engineer Apprenticeship</h5>
-                    <small>Jun - Aug 2023</small>
-                  </div>
-                  <small class="fg-theme">IYKRA</small>
-                  <p>
-                    •	Designed and implemented data pipelines (batch and streaming) into a data warehouse using Kafka, Airflow, and ETL tools <br>
-                    •	Developed an interactive dashboard for the Bank Marketing project, providing visualizations and insights for effective data analysis and decision-making
-                  </p>
-                </div>
-              </li>
-              <li>
-                <div class="title">2023</div>
-                <div class="details">
-                  <div class="d-flex justify-content-between">
-                    <h5>Website Developer Intern</h5>
+                    <h5><a class="fg-theme" href="#">Website Developer Intern</a></h5>
                     <small>Feb - May 2023</small>
                   </div>
-                  <small class="fg-theme">Perum Percetakan Uang RI</small>
-                  <p>
-                    •	Design and develop an application system to automate the tracing of employee expenses <br>
-                    •	Work with several Units in several divisions <br>
-                    •	Analysis of data requirements and functional system requirements by conducting interviews with related clients
-                  </p>
+                  <p>🏢 <b>Perum Percetakan Uang RI</b></p>
+                  <p>🧑🏻‍💻 <a class="fg-theme" href="#" data-toggle="modal" data-target="#modalPeruri">What did I achieve?</a></p>
                 </div>
               </li>
               <li>
                 <div class="title">2022</div>
                 <div class="details">
                   <div class="d-flex justify-content-between">
-                    <h5>System Analyst Intern</h5>
+                    <h5><a class="fg-theme" href="#">System Analyst Intern</a></h5>
                     <small>Aug - Dec 2022</small>
                   </div>
-                  <small class="fg-theme">PT. Bridgestone Tire Indonesia</small>
-                  <p>
-                    •	Assigned to the design user interface with Figma and also conduct its usability test <br>
-                    •	Analyze system requirements to develop an inventory website by conducting interviews with users and related parties <br>
-                    •	Made a database schema as well as use cases and activity diagrams
-                  </p>
+                  <p>🏢 <b>PT. Bridgestone Tire Indonesia</b></p>
+                  <p>🧑🏻‍💻 <a class="fg-theme" href="#" data-toggle="modal" data-target="#modalBridgestone">What did I achieve?</a></p>
                 </div>
               </li>
               <li>
                 <div class="title">2022</div>
                 <div class="details">
                   <div class="d-flex justify-content-between">
-                    <h5>Data Analyst Apprenticeship</h5>
+                    <h5><a class="fg-theme" href="#">Data Analyst Intern</a></h5>
                     <small>Feb - Jul 2022</small>
                   </div>
-                  <small class="fg-theme">Generasi Gigih 2.0 | GoTo Impact Foundation</small>
-                  
-                  <p>
-                    •	For three months of technical classes on Data Analyst. How to perform data cleaning, data transformation, and data reformation to create data visualizations to provide insight or business solutions <br>
-                    •	Collaborated with peers on a capstone project for a case study on reading literacy inequality in Indonesia <br>
-                    •	Made a dashboard visualization for the final project with Google Data Studio
-                  </p>
+                  <p>🏢 <b>Generasi Gigih 2.0 | GoTo Impact Foundation</b></p>
+                  <p>🧑🏻‍💻 <a class="fg-theme" href="#" data-toggle="modal" data-target="#modalGoTo">What did I achieve?</a></p>
                 </div>
               </li>
             </ul>
@@ -275,53 +261,74 @@
     </div>
     <!-- end of experience and study -->
     <!-- additional -->
-    <div class="container py-5">
-      <h1 class="text-center fw-normal wow fadeIn">Additional</h1>
-      <div class="row py-3">
-        <div class="col-md-4">
-          <div class="px-lg-3">
-            <h4 class="wow fadeInUp">Technical Skills</h4>
-              <ul class="theme-list">
-                <li>Python Programming</li>
-                <li>Google Cloud Platform</li>
-                <li>Google BigQuery</li>
-                <li>Relational database / SQL</li>
-                <li>Data Visualize</li>
-                <li>Tableau, Power BI, Looker Studio/Google Data Studio</li>
-                <li>Adobe Illustrator, Figma</li>
-                <li>Laravel Web Framework</li>
-              </ul>
+    <div class="container py-2">
+      <h1 class="text-center fw-normal wow fadeIn">Tech Stack Skills</h1>
+      <div class="row py-3 justify-content-md-center">
+        <div class="col-md-6">
+          <div class="px-lg-4">
+            <details>
+              <summary>✨ In professional:</summary>
+                <br>
+              <code><a href="https://python.org/" target="_blank"><img height="40" src="https://cdn.worldvectorlogo.com/logos/python-5.svg" alt="Python" class="zoom m-1" title="Python"></a></code>
+                
+              <code><a href="https://numpy.org/" target="_blank"><img height="40" src="https://cdn.worldvectorlogo.com/logos/numpy-1.svg" alt="Numpy" class="zoom m-1" title="Numpy"></a></code>
+                
+              <code><a href="https://cloud.google.com/" target="_blank"><img class="zoom m-1" height="40" src="https://cdn.worldvectorlogo.com/logos/google-cloud-1.svg" alt="Google Cloud" title="Google Cloud"></a></code>
+
+              <code><a href="https://cloud.google.com/" target="_blank"><img class="zoom m-1" height="40" src="https://cdn.worldvectorlogo.com/logos/google-bigquery-logo-1.svg" alt="Google BigQuery" title="Google BigQuery"></a></code>
+
+              <code><a href="https://cloud.google.com/" target="_blank"><img class="zoom m-1" height="40" src="https://cdn.worldvectorlogo.com/logos/google-data-studio.svg" alt="Looker Studio/GDS" title="Looker Studio/GDS"></a></code>
+
+              <code><a href="https://www.tableau.com/" target="_blank"><img class="zoom m-1" height="40" src="https://cdn.worldvectorlogo.com/logos/tableau-software.svg" alt="Tableau" title="Tableau"></a></code>
+
+              <code><a href="https://airflow.apache.org/" target="_blank"><img class="zoom m-1" height="40" src="https://www.svgrepo.com/show/353380/airflow.svg" alt="Airflow" title="Airflow"></a></code>
+
+              <code><a href="https://www.docker.com/" target="_blank"><img class="zoom m-1" height="40" src="https://cdn.worldvectorlogo.com/logos/docker-4.svg" alt="Docker" title="Docker"></a></code>
+              
+              <code><a href="https://colab.research.google.com/" target="_blank"><img class="zoom m-1" height="40" src="https://upload.wikimedia.org/wikipedia/commons/d/d0/Google_Colaboratory_SVG_Logo.svg" alt="Colab" title="Colab"></a></code>
+
+              <code><a href="https://www.javascript.com/" target="_blank"><img class="zoom m-1" height="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg" alt="Javascript" title="Javascript"></a></code>
+
+              <code><a href="https://www.php.net/" target="_blank"><img class="zoom m-1" height="40" src="https://cdn.worldvectorlogo.com/logos/php-1.svg" alt="PHP" title="PHP"></a></code>
+
+              <code><a href="https://www.laravel.com/" target="_blank"><img class="zoom m-1" height="40" src="https://cdn.worldvectorlogo.com/logos/laravel-2.svg" alt="Laravel" title="Laravel"></a></code>
+
+              <code><a href="https://www.mysql.com/" target="_blank"><img class="zoom m-1" height="40" src="https://cdn.worldvectorlogo.com/logos/mysql-6.svg" alt="MySQL" title="MySQL"></a></code>
+
+              <code><a href="https://www.postgresql.org/" target="_blank"><img class="zoom m-1" height="40" src="https://cdn.worldvectorlogo.com/logos/postgresql.svg" alt="PostgreSql" title="PostgreSql"></a></code>
+
+              <code><a href="https://www.w3schools.com/html/" target="_blank"><img class="zoom m-1" height="40" src="https://www.vectorlogo.zone/logos/w3_html5/w3_html5-icon.svg" alt="HTML" title="HTML"></a></code>
+
+              <code><a href="https://getbootstrap.com/" target="_blank"><img class="zoom m-1" height="40" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/512px-Bootstrap_logo.svg.png?20210507000024" alt="Bootstrap" title="Bootstrap"></a></code>
+
+              <code> <a href="https://tailwindcss.com/" target="_blank"> <img class="zoom m-1" src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg" title="Tailwind" alt="Tailwind" height="40"/> </a> </code>
+
+              <code><a href="https://git-scm.com/" target="_blank"><img class="zoom m-1" height="40" src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="Git" title="Git"></a></code>
+
+              <code><a href="https://www.figma.com/" target="_blank"><img class="zoom m-1" height="40" src="https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg" alt="Figma" title="Figma"></a></code>
+
+              <br>
+              </details>
+    
           </div>
         </div>
         <div class="col-md-4">
           <div class="px-lg-3">
-            <h4 class="wow fadeInUp">Soft Skills</h4>
-              <ul class="theme-list">
-                <li>Machine Learning</li>
-                <li>Data Visualization</li>
-                <li>Data Analytics</li>
-                <li>A/B Testing</li>
-                <li>Multivariate Analysis</li>
-                <li>Critical Thinking</li>
-                <li>Leadership</li>
-                <li>Presentation Skill</li>
-                <li>Attention To detail</li>
-              </ul>
+            <details>
+               <summary>🌱 Looking forward to learning:</summary>
+              <br>
+              <code><a href="https://flutter.dev/" target="_blank"><img class="zoom m-1" height="40" src="https://www.vectorlogo.zone/logos/flutterio/flutterio-icon.svg" alt="Flutter" title="Flutter"></a></code>
+
+              <code><a href="https://analytics.google.com/" target="_blank"><img class="zoom m-1" height="40" src="https://www.vectorlogo.zone/logos/google_analytics/google_analytics-icon.svg" alt="Google Analytics" title="Google Analytics"></a></code>
+
+              <code><a href="https://www.tensorflow.org/" target="_blank"><img class="zoom m-1" height="40" src="https://www.vectorlogo.zone/logos/tensorflow/tensorflow-icon.svg" alt="Tensorflow" title="Tensorflow"></a></code>
+
+              <code><a href="https://reactnative.dev/" target="_blank"><img class="zoom m-1" height="40" src="https://www.vectorlogo.zone/logos/reactjs/reactjs-icon.svg" alt="React Native" title="React Native"></a></code>
+
+              <code><a href="https://aws.amazon.com/" target="_blank"><img class="zoom m-1" height="40" src="https://www.vectorlogo.zone/logos/amazon_aws/amazon_aws-icon.svg" alt="AWS" title="AWS"></a></code>
+              </details>
           </div>
         </div>
-        <div class="col-md-4">
-          <div class="px-lg-3">
-            <h4 class="wow fadeInUp">Certificate & Training</h4>
-              <ul class="theme-list">
-                <li>Data Analyst (YABB Program)</li>
-                <li>Data Science (Binar Academy)</li>
-                <li>Data Science (Udemy x Zero to Mastery)</li>
-                <li>SQL (Progate)</li>
-                <li>UI/UX (Udemy x Zero to Mastery)</li>
-                <li>Junior Mobile Programmer (BNSP)</li>
-              </ul>
-            </div>
-          </div>
       </div>
     </div>
     <!-- end of additional -->
@@ -335,39 +342,39 @@
         <div class="row mt-5">
           <div class="col-md-6 col-lg-4 col-xl-4">
             <div class="card card-service wow fadeInUp">
-              <div class="icon">
+              <div class="icon zoom">
                 <span class="ti-bar-chart"></span>
               </div>
               <div class="caption">
-                <h4 class="fg-theme">Data Analyst</h4>
+                <h4 class="fg-theme">Data Analytics</h4>
                 <p>
-                  Python data analytic, Tableau, Power BI, Google data Studio
+                  Data analysis is a critical aspect of any successful business. As a skilled data analyst, I have the ability to transform data into valuable insights for decision-making. Trust me to provide the necessary analysis that will enable your business to make the most informed decisions.
                 </p>
               </div>
             </div>
           </div>
           <div class="col-md-6 col-lg-4 col-xl-4">
             <div class="card card-service wow fadeInUp">
-              <div class="icon">
+              <div class="icon zoom">
                 <span class="ti-vector"></span>
               </div>
               <div class="caption">
                 <h4 class="fg-theme">UI/UX Design</h4>
                 <p>
-                  Figma, Adobe XD, UX Research
+                  I specialize in crafting intuitive and visually appealing user interfaces using Figma and/or any design tools. My goal is to create designs that enhance the user experience, making digital interactions both user-friendly and aesthetically pleasing
                 </p>
               </div>
             </div>
           </div>
           <div class="col-md-6 col-lg-4 col-xl-4">
             <div class="card card-service wow fadeInUp">
-              <div class="icon">
+              <div class="icon zoom">
                 <span class="ti-desktop"></span>
               </div>
               <div class="caption">
                 <h4 class="fg-theme">Web Development</h4>
                 <p>
-                  Experience with Laravel web framework
+                  Being a web developer, I possess the expertise to create and maintain websites, ensuring they are functional, visually appealing, and user-friendly. I'm committed to crafting online experiences that meet the unique needs of businesses and their customers.
                 </p>
               </div>
             </div>
@@ -802,6 +809,149 @@
       </div>
     </div>
     <!-- End footer -->
+
+
+    <!-- Modal -->
+    <!-- peruri -->
+    <div class="modal fade" id="modalPeruri" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title fg-theme" id="exampleModalLongTitle">What did I achieve during my web developer internship at Peruri?</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p class="text-justify">
+              During my internship as a Web Developer, I had the opportunity to work on a significant project aimed at streamlining the expense tracking process for employees. Here's a breakdown of my responsibilities: <br>
+              <ul class="theme-list text-justify">
+                <li>
+                  <b>Design and Development of an Expense Tracking Application:</b> I was responsible for designing and developing an application system using Laravel and MySQL. This system aimed to automate and simplify the process of tracking employee expenses. Through efficient coding and user-friendly design, I contributed to the creation of a functional and user-centric application 
+                </li>
+                <li>
+                  <b>Collaboration Across Multiple Divisions and Units:</b> Throughout the project, I collaborated with various units and divisions within the company. This collaboration involved coordinating with cross-functional teams to ensure the application met the needs and requirements of different stakeholders.
+                </li>
+                <li>
+                  <b>Data Analysis and Functional System Requirements:</b> To ensure the application's effectiveness, I conducted interviews with clients from different departments to analyze data requirements and gather functional system requirements. 
+                </li>
+              </ul>
+            </p>
+
+            <p>Tech used: 
+              <code><a href="https://www.php.net/" target="_blank"><img height="25" src="https://cdn.worldvectorlogo.com/logos/php-1.svg" alt="PHP" title="PHP"></a></code>
+              <code><a href="https://www.laravel.com/" target="_blank"><img title="Laravel" height="25" src="https://cdn.worldvectorlogo.com/logos/laravel-2.svg" alt="Laravel"></a></code>
+              <code><a href="https://www.w3schools.com/html/" target="_blank"><img title="HTML" height="25" src="https://www.vectorlogo.zone/logos/w3_html5/w3_html5-icon.svg"></a></code>
+              <code><a href="https://www.javascript.com/" target="_blank"><img height="25" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg" alt="Javascript" title="Javascript"></a></code>
+              <code><a href="https://getbootstrap.com/" target="_blank"><img title="Bootstrap" height="25" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/512px-Bootstrap_logo.svg.png?20210507000024"></a></code>
+              <code><a href="https://www.mysql.com/" target="_blank"><img title="MySql" height="25" src="https://cdn.worldvectorlogo.com/logos/mysql-6.svg"></a></code>
+              <code><a href="https://git-scm.com/" target="_blank"><img title="Git" height="25" src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg"></a></code>
+              <code><a href="https://www.apachefriends.org/" target="_blank"><img title="Xampp" height="25" src="https://cdn.worldvectorlogo.com/logos/xampp.svg"></a></code>
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn fg-theme" data-dismiss="modal">Oke</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Bridgestone -->
+    <div class="modal fade" id="modalBridgestone" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title fg-theme" id="exampleModalLongTitle">What did I achieve during my System Analyst internship at Bridgestone?</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p class="text-justify">
+              During my role as a System Analyst Intern, I was tasked with analyzing and developing an inventory website for efficient product control. Here's a summary of my responsibilities:  <br>
+              <ul class="theme-list text-justify">
+                <li>
+                  <b>Analysis of System Requirements:</b> I conducted in-depth interviews with users and relevant stakeholders to comprehensively analyze system requirements. This involved gathering insights into the specific needs and expectations of end-users and business-related parties.
+                </li>
+                <li>
+                  <b>Data Modeling and Database Schema Development:</b> To visualize and document system functionality, I created detailed use cases and activity diagrams. I also played a pivotal role in creating the database schema for the inventory system. This schema served as the foundation for efficient data management, ensuring that product control processes were streamlined and data was organized effectively.
+                </li>
+                <li>
+                  <b>User Interface Design with Figma:</b> I was responsible for designing the user interface (UI) of the inventory website using Figma. <a href="https://tobiadnan.github.io/content/uiux-bcs.html" target="_blank" rel="noopener noreferrer">The UI design</a> focused on user-friendliness and functionality.
+                </li>
+              </ul>
+            </p>
+            <p>Tech used: 
+              <code><a href="https://www.figma.com/" target="_blank"><img height="25" src="https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg" alt="Figma" title="Figma"></a></code>
+            
+              <code><a href="https://app.diagrams.net/" target="_blank"><img height="25" src="https://cdn.worldvectorlogo.com/logos/draw-io.svg" alt="Draw.IO" title="Draw.IO"></a></code>
+            
+              <code><a href="" target="_blank"><img height="25" src="https://cdn.worldvectorlogo.com/logos/microsoft-sharepoint.svg" alt="Sharepoint" title="Sharepoint"></a></code>
+            
+              <code><a href="www.maze.co" target="_blank"><img height="20" src="https://asset.brandfetch.io/iddFGFHNcm/idzM4RSNwo.svg?updated=1671034548382" alt="Maze" title="Maze"></a></code>
+            
+              <code><a href="" target="_blank"><img height="25" src="https://cdn.worldvectorlogo.com/logos/excel-4.svg" alt="Excle/Spreadsheet" title="Excle/Spreadsheet"></a></code>
+            
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn fg-theme" data-dismiss="modal">Oke</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- GoTo -->
+    <div class="modal fade" id="modalGoTo" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title fg-theme" id="exampleModalLongTitle">What did I achieve during my System Analyst internship at GoTo Impact Foundation?</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p class="text-justify">
+              My apprenticeship as a Data Analyst not only expanded my technical expertise but also honed my ability to work collaboratively on meaningful projects. It was a transformative experience that reinforced my passion for leveraging data to drive informed decision-making. The experience included: <br>
+              <ul class="theme-list text-justify">
+                <li>
+                  <b>Technical Classes in Data Analysis:</b> Over the course of the first three months, I engaged in rigorous technical classes that delved into various aspects of Data Analysis. This comprehensive training covered data cleaning, data transformation, and data reformation techniques.
+                </li>
+                <li>
+                  <b>Collaboration on a Capstone Project:</b> As part of the apprenticeship program, I had the opportunity to collaborate with my peers on a capstone project. Our project focused on conducting a case study to analyze reading literacy inequality in Indonesia. This collaborative effort allowed us to apply our newly acquired data analysis skills in a real-world context, addressing a significant social issue.
+                </li>
+                <li>
+                  <b>Dashboard Visualization for Final Project:</b> For the final project, I leveraged my skills in data visualization by creating an <a href="https://tobiadnan.github.io/content/gigih.html" target="_blank" rel="noopener noreferrer">interactive dashboard</a>. This dashboard was designed using tools like Looker Studio or Google Data Studio. It played a crucial role in presenting our findings and insights from the case study, providing a visually engaging and informative representation of the data.
+                </li>
+              </ul>
+            </p>
+            <p>Tech used: 
+              <code><a href="https://python.org/" target="_blank"><img height="25" src="https://cdn.worldvectorlogo.com/logos/python-5.svg" alt="Python" title="Python"></a></code>
+              
+              <code><a href="" target="_blank"><img height="25" src="https://upload.wikimedia.org/wikipedia/commons/3/38/Jupyter_logo.svg" alt="Jupyter" title="Jupyter"></a></code>
+
+              <code><a href="https://numpy.org/" target="_blank"><img height="25" src="https://cdn.worldvectorlogo.com/logos/numpy-1.svg" alt="Numpy" title="Numpy"></a></code>
+              
+              <code><a href="https://pandas.pydata.org/" target="_blank"><img height="25" src="https://upload.wikimedia.org/wikipedia/commons/e/ed/Pandas_logo.svg" alt="Pandas" title="Pandas"></a></code>
+
+              <code><a href="https://cloud.google.com/" target="_blank"><img height="25" src="https://cdn.worldvectorlogo.com/logos/google-cloud-1.svg" alt="Google Cloud" title="Google Cloud"></a></code>
+
+              <code><a href="https://cloud.google.com/" target="_blank"><img height="25" src="https://cdn.worldvectorlogo.com/logos/google-bigquery-logo-1.svg" alt="Google BigQuery" title="Google BigQuery"></a></code>
+
+              <code><a href="https://cloud.google.com/" target="_blank"><img height="25" src="https://cdn.worldvectorlogo.com/logos/google-data-studio.svg" alt="Looker Studio/GDS" title="Looker Studio/GDS"></a></code>
+            
+              <code><a href="https://git-scm.com/" target="_blank"><img height="25" src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="Git" title="Git"></a></code>
+
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn fg-theme" data-dismiss="modal">Oke</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- end modal -->
 
     <script src="/assets/js/jquery-3.5.1.min.js"></script>
 
