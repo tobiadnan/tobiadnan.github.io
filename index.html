@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
@@ -74,6 +73,17 @@
             ><span class="ti-instagram"></span
           ></a>
         </div>
+        <!-- facebook -->
+        <div class="d-block">
+          <a
+            href="https://facebook.com/thobysaha/"
+            class="btn btn-fab btn-sm"
+            title="Facebook"
+            data-toggle="tooltip"
+            data-placement="left"
+            ><span class="ti-facebook"></span
+          ></a>
+        </div>
         <!-- Settings -->
         <div class="d-block">
           <button class="btn btn-fab btn-sm" id="sideel" title="Settings">
@@ -104,6 +114,7 @@
             data-class="theme-purple"
           ></span>
         </div>
+        <div id="google_translate_element" class="mb-3"></div>
         <select class="custom-select d-block my-2" id="change-page">
           <option value="">Choose Page</option>
           <option value="index">Home</option>
@@ -503,11 +514,11 @@
               class="img-place"
               data-src="/assets/img/work/credit.png" 
               data-fancybox
-              data-caption="<h5 class='fg-theme'><a href='https://lookerstudio.google.com/reporting/cd1f7024-5ac4-48a4-9878-70ee8587a15f' target='_blank'>Credit Card Portfolio Dashboard</a></h5> <p>Analytic Dasboard, Fraud Analytic, Looker Studio</p>"
+              data-caption="<h5 class='fg-theme'><a href='/content/credit-card.html' target='_blank'>Credit Card Portfolio Dashboard</a></h5> <p>Analytic Dasboard, Fraud Analytic, Looker Studio</p>"
             >
               <img src="/assets/img/work/credit.png" alt="" />
               <div class="img-caption">
-                <h5 class="fg-theme">Credit Card Portfolio Dashboard</h5>
+                <h5 class="fg-theme">Credit Card Applicant Approval Prediction</h5>
                 <p>Analytic Dasboard, Fraud Analytic, Looker Studio</p>
               </div>
             </div>
@@ -518,9 +529,9 @@
               class="img-place"
               data-src="/assets/img/work/covid.png" 
               data-fancybox
-              data-caption="<h5 class='fg-theme'><a href='/content/covid-binar.html' target='_blank'>Covid-19 Disease Dashboard | Indonesia 2022</a></h5> <p>Analysis, Literacy Index</p>"
+              data-caption="<h5 class='fg-theme'><a href='https://medium.com/@tobyadnan/covid-19-disease-dashboard-indonesia-2022-a28f723f7802' target='_blank'>Covid-19 Disease Dashboard | Indonesia 2022</a></h5> <p>Analysis, Literacy Index</p>"
             >
-              <img src="/assets/img/work/covid.png" alt="" />
+              <img src="/assets/img/work/covid.png" alt="Covid-19 Disease Dashboard | Indonesia 2022" />
               <div class="img-caption">
                 <h5 class="fg-theme">Covid-19 Disease Dashboard | Indonesia 2022</h5>
                 <p>Analysis, Covid-19, Looker Studio</p>
@@ -899,7 +910,7 @@
             </p>
           </div>
           <div class="modal-footer d-flex justify-content-between">
-            <a href="#" role="button" class="btn btn-theme btn-sm">go to project</a>
+            <a href="/content/monbi.html" role="button" target='_blank' class="btn btn-theme btn-sm">go to project</a>
             <button type="button" class="btn fg-theme" data-dismiss="modal">Close</button>
           </div>
         </div>
@@ -955,7 +966,7 @@
             </p>
           </div>
           <div class="modal-footer d-flex justify-content-between">
-            <a href="#" role="button" class="btn btn-theme btn-sm">go to project</a>
+            <a href="#" role="button" target='_blank' class="btn btn-theme btn-sm">go to project</a>
             <button type="button" class="btn fg-theme" data-dismiss="modal">Oke</button>
           </div>
         </div>
@@ -1017,7 +1028,7 @@
             </p>
           </div>
           <div class="modal-footer d-flex justify-content-between">
-            <a href="#" role="button" class="btn btn-theme btn-sm">go to project</a>
+            <a href="https://medium.com/@tobyadnan/indonesias-2021-literacy-levels-and-reading-habits-366dab8b8370" role="button" target='_blank' class="btn btn-theme btn-sm">go to project</a>
             <button type="button" class="btn fg-theme" data-dismiss="modal">Oke</button>
           </div>
         </div>
@@ -1077,7 +1088,7 @@
             </p>
           </div>
           <div class="modal-footer d-flex justify-content-between">
-            <a href="#" role="button" class="btn btn-theme btn-sm">go to project</a>
+            <a href="#" role="button" target='_blank' class="btn btn-theme btn-sm">go to project</a>
             <button type="button" class="btn fg-theme" data-dismiss="modal">Oke</button>
           </div>
         </div>
@@ -1142,7 +1153,7 @@
             </p>
           </div>
           <div class="modal-footer d-flex justify-content-between">
-            <a href="#" role="button" class="btn btn-theme btn-sm">go to project</a>
+            <a href="https://medium.com/@tobyadnan/covid-19-disease-dashboard-indonesia-2022-a28f723f7802" target="_blank" rel="noopener noreferrer" role="button" target='_blank' class="btn btn-theme btn-sm">go to project</a>
             <button type="button" class="btn fg-theme" data-dismiss="modal">Oke</button>
           </div>
         </div>
@@ -1204,7 +1215,7 @@
             </p>
           </div>
           <div class="modal-footer d-flex justify-content-between">
-            <a href="#" role="button" class="btn btn-theme btn-sm">go to project</a>
+            <a href="/content/credit-card.html" role="button" target='_blank' class="btn btn-theme btn-sm">go to project</a>
             <button type="button" class="btn fg-theme" data-dismiss="modal">Oke</button>
           </div>
         </div>
@@ -1242,6 +1253,23 @@
       async
       defer
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAIA_zqjFMsJM_sxP9-6Pde5vVCTyJmUHM&callback=initMap"
+    ></script>
+
+    <script type="text/javascript">
+      function googleTranslateElementInit() {
+        new google.translate.TranslateElement(
+          {
+            pageLanguage: "en",
+            layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+          },
+          "google_translate_element"
+        );
+      }
+    </script>
+
+    <script
+      type="text/javascript"
+      src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
     ></script>
   </body>
 </html>
