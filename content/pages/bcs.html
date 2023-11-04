@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <title>Portfolio - BCS</title>
+    <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/assets/css/themify-icons.css"
+    />
+    <link rel="stylesheet" type="text/css" href="/assets/css/bootstrap.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/assets/vendor/animate/animate.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/assets/vendor/owl-carousel/owl.carousel.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/assets/vendor/perfect-scrollbar/css/perfect-scrollbar.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/assets/vendor/nice-select/css/nice-select.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/assets/vendor/fancybox/css/jquery.fancybox.min.css"
+    />
+
+    <link rel="stylesheet" type="text/css" href="/assets/css/virtual.css" />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/assets/css/topbar.virtual.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../../assets/css/minibar.virtual.css"
+    />
+  </head>
+
+  <body class="theme-red">
+    <!-- Back to top button -->
+    <div class="btn-back_to_top">
+      <span class="ti-arrow-up"></span>
+    </div>
+
+    <!-- Setting button -->
+
+    <div class="config">
+      <div class="template-config">
+        <!-- linkedin -->
+        <div class="d-block">
+          <a
+            href="http://linkedin.com/in/tobyadnan/"
+            class="btn btn-fab btn-sm"
+            title="Linkedin"
+            data-toggle="tooltip"
+            data-placement="left"
+            ><span class="ti-linkedin"></span
+          ></a>
+        </div>
+        <!-- facebook -->
+        <div class="d-block">
+          <a
+            href="http://github.com/tobiadnan"
+            class="btn btn-fab btn-sm"
+            title="Github"
+            data-toggle="tooltip"
+            data-placement="left"
+            ><span class="ti-github"></span
+          ></a>
+        </div>
+        <!-- facebook -->
+        <div class="d-block">
+          <a
+            href="http://instagram.com/tobyadnan"
+            class="btn btn-fab btn-sm"
+            title="Instagram"
+            data-toggle="tooltip"
+            data-placement="left"
+            ><span class="ti-instagram"></span
+          ></a>
+        </div>
+        <!-- facebook -->
+        <div class="d-block">
+          <a
+            href="https://facebook.com/thobysaha/"
+            class="btn btn-fab btn-sm"
+            title="Facebook"
+            data-toggle="tooltip"
+            data-placement="left"
+            ><span class="ti-facebook"></span
+          ></a>
+        </div>
+        <!-- Settings -->
+        <div class="d-block">
+          <button class="btn btn-fab btn-sm" id="sideel" title="Settings">
+            <span class="ti-settings"></span>
+          </button>
+        </div>
+        <!-- end Setting button -->
+      </div>
+      <div class="set-menu">
+        <p>Select Color</p>
+        <div class="color-bar" data-toggle="selected">
+          <span
+            class="color-item bg-theme-red selected"
+            data-class="theme-red"
+          ></span>
+          <span class="color-item bg-theme-blue" data-class="theme-blue"></span>
+          <span
+            class="color-item bg-theme-green"
+            data-class="theme-green"
+          ></span>
+          <span
+            class="color-item bg-theme-orange"
+            data-class="theme-orange"
+          ></span>
+          <span
+            class="color-item bg-theme-purple"
+            data-class="theme-purple"
+          ></span>
+        </div>
+        <div id="google_translate_element" class="mb-3"></div>
+        <select class="custom-select d-block my-2" id="change-page">
+          <option value="">Choose Page</option>
+          <option value="index">Home</option>
+          <option value="blog">Blog</option>
+          <option value="portfolio">Portfolio</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="minibar">
+      <div class="header">
+        <div class="brand"></div>
+      </div>
+      <div class="content">
+        <ul class="main-menu">
+          <li class="menu-item">
+            <a href="/index.html" class="menu-link">
+              <span class="icon ti-home"></span>
+              <span class="caption">Home</span>
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href="/index.html#about" class="menu-link">
+              <span class="icon ti-user"></span>
+              <span class="caption">About</span>
+            </a>
+          </li>
+          <li class="menu-item active">
+            <a href="/portfolio.html" class="menu-link">
+              <span class="icon ti-briefcase"></span>
+              <span class="caption">Portfolio</span>
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href="/index.html#contact" class="menu-link">
+              <span class="icon ti-location-pin"></span>
+              <span class="caption">Contact</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- End Navbar -->
+
+    <!-- Content -->
+    <div class="vg-page page-contact" id="contact">
+      <div class="container-fluid">
+        <div class="text-center wow fadeInUp">
+          <div class="badge badge-subhead">System Analyst</div>
+        </div>
+        <h2 class="text-center fw-normal wow fadeInUp mb-5">
+          Bladder Control Stock (BCS)
+        </h2>
+        <div class="container text-center wow fadeInUp mb-3">
+          <img
+            class="img-fluid"
+            width="848"
+            height="430"
+            src="/assets/img/work/bcs.png"
+            alt="Monbi App"
+            title="Monbi"
+          />
+        </div>
+        <div class="container text-justify justify-content-center py-5">
+          <h4>Background</h4>
+          <p class="mb-3">
+            This system analysis project was initiated in response to real-world
+            challenges faced by the company. Prior to the project's
+            implementation, the company encountered several significant
+            constraints in the management and control of processes related to
+            Bladder. Bladder is a critical component in the company's production
+            chain, and its management and monitoring are of utmost importance.
+            Some of the challenges identified before the project began include:
+          </p>
+          <ol class="mb-3">
+            <li>
+              <b>Error-Prone Manual Processes</b>: Previously, most of the
+              Bladder management processes were conducted manually. Data had to
+              be manually entered into Excel spreadsheets, which led to a high
+              potential for errors. This not only disrupted operational
+              efficiency but also posed the risk of financial losses.
+            </li>
+            <li>
+              <b>Limited Access and Control</b>: The manual system did not
+              provide sufficient visibility into Bladder stock and usage.
+              Decision-makers often struggled to monitor and control Bladder
+              inventory and allocations across various production locations.
+            </li>
+            <li>
+              <b>Potential Losses Due to Misuse or Irregularities</b>: With the
+              lack of effective control and monitoring, there was a potential
+              for losses resulting from misuse or irregularities in Bladder
+              management. This could include the misuse of raw materials,
+              inefficient usage, or even the risk of theft.
+            </li>
+            <li>
+              <b>Increased Complexity</b>: As the business grew, the level of
+              complexity in Bladder management also increased. Manual management
+              processes became increasingly impractical and called for a more
+              sophisticated solution to support the company's needs.
+            </li>
+          </ol>
+          <p class="mb-3">
+            In this context, this project was conceived to address these
+            challenges by providing an automated, efficient, and reliable
+            web-based solution. With the implementation of this project, the
+            company aims to enhance Bladder management, monitoring, and control
+            while reducing the risks of losses and human errors. Furthermore,
+            this project supports the company's growth by providing a robust
+            foundation for better and more efficient management.
+          </p>
+
+          <h4>Poroject Objectives</h4>
+          <p class="mb-3">
+            The main objective of this project is to create an efficient and
+            reliable automation system for processing orders, monitoring, and
+            inventory management of Bladder. In achieving this goal, several key
+            aspects are the primary focus:
+          </p>
+          <ol class="mb-3">
+            <li>
+              <b>Process Optimization</b>: This project aims to optimize all
+              processes related to Bladder, including ordering, supervision, and
+              inventory control. By using a web-based solution, the company
+              seeks to create a more efficient and expedited workflow.
+            </li>
+            <li>
+              <b>Enhanced Control</b>: With the implementation of an automated
+              system, the company aims to achieve better control over Bladder.
+              This involves more accurate monitoring, precise allocation, and
+              improved compliance with procedures.
+            </li>
+            <li>
+              <b>Risk Reduction</b>: One of the main objectives of this project
+              is to reduce the risk of losses due to misuse or irregularities in
+              Bladder management. With a reliable system, the potential for
+              losses can be minimized.
+            </li>
+            <li>
+              <b>Improved Efficiency</b>: Using modern tools such as Visio,
+              Figma, Maze, Excel, and Draw.IO, this project aims to enhance
+              efficiency in understanding, designing, and implementing
+              solutions. These tools assist in data collection, user interface
+              design, process modeling, and documentation.
+            </li>
+            <li>
+              <b>Readiness for Growth</b>: In addition to specific objectives,
+              this project also aims to prepare the company for further growth.
+              With a strong foundation in Bladder management, the company can
+              better address the demands of its business growth.
+            </li>
+          </ol>
+
+          <h4>Scope</h4>
+          <p class="mb-3">
+            As a System Analyst responsible for this analysis project, my work
+            scope is primarily focused on analyzing system requirements. The
+            project revolves around improving Bladder management, including
+            order processing, supervision, and inventory. Within this scope,
+            several key aspects involve:
+          </p>
+          <ul class="mb-3">
+            <li>
+              <b>Functional and Non-Functional Requirements</b>: My task is to
+              identify and document both functional and non-functional
+              requirements needed for the new system. This includes essential
+              features that must be present (functional requirements) as well as
+              performance, security, and scalability criteria (non-functional
+              requirements).
+            </li>
+            <li>
+              <b>User Requirement Analysis</b>: I conducted interviews with
+              users who interact with the current system. I explored user
+              complaints, desires, and expectations related to Bladder
+              management. This helped me understand the user perspective and
+              their needs in system improvement.
+            </li>
+            <li>
+              <b>User Interface Design (UI Design)</b>: Based on the
+              understanding of user requirements and the required functionality,
+              I designed a user interface (UI) that can facilitate the
+              processing of Bladder orders, supervision, and inventory more
+              efficiently and user-friendly. The design serves as a foundation
+              for further development.
+            </li>
+            <li>
+              <b>Collaboration with the Development Team</b>: After completing
+              the UI design, I collaborated with the development team to convey
+              the UI design and ensure they understand the UI vision and
+              requirements. While I'm not involved in technical development,
+              effective communication with the development team is crucial for
+              implementing the solution correctly.
+            </li>
+          </ul>
+          <p class="mb-3">
+            In this scope, I am not only responsible for gathering and
+            documenting requirements but also for presenting a solution that
+            aligns with user expectations. This ensures that the project has a
+            solid foundation before entering the implementation phase.
+          </p>
+
+          <h4>Technologies Used</h4>
+          <ul class="mb-3">
+            <li>
+              <a href="https://figma.com" target="_blank">Figma</a>
+            </li>
+            <li>
+              <a
+                href="https://www.microsoft.com/en-ww/microsoft-365/visio/flowchart-software"
+                target="_blank"
+                >Microsoft Visio</a
+              >
+            </li>
+            <li>
+              <a href="https://app.diagrams.net/" target="_blank">Draw.io</a>
+            </li>
+            <li><a href="https://maze.co/" target="_blank">Maze</a></li>
+            <li>
+              <a href="https://spreadsheets.google.com/" target="_blank"
+                >Excle/Spreadsheet</a
+              >
+            </li>
+          </ul>
+          <h4>Project Impelementation</h4>
+          <p class="mb-3">
+            The project's implementation phase was driven by the application of
+            <b>the Design Thinking methodology</b>. This approach placed a
+            strong emphasis on understanding user needs, ideating solutions, and
+            iterating to create a user-centric system. Here is an overview of
+            the steps I took during the implementation process:
+          </p>
+
+          <p class="mb-3">
+            I began by immersing myself in the user's perspective, seeking a
+            deep understanding of their requirements and pain points. Through
+            empathetic <b>interviews and observations</b>, I gained insights
+            into what the users truly needed from the system.
+          </p>
+          <p class="mb-3">
+            The next step involved
+            <b
+              >defining the detailed functional and non-functional
+              requirements</b
+            >
+            based on the user-centric insights. These requirements were
+            translated into a comprehensive list of functionalities and
+            performance expectations.
+          </p>
+          <p class="mb-3">
+            To provide a visual representation of the system's structure, I
+            <b>utilized various modeling tools</b>. These included
+            Entity-Relationship Diagrams (ERD), Data Flow Diagrams (DFD), Use
+            Case Diagrams, and others. These diagrams clarified data structures,
+            information flows, and user-system interactions, all while staying
+            aligned with the user-centric approach. The user interface (UI)
+            design was a crucial aspect of the project. Employing the Design
+            Thinking principle of ideation, I <b>designed the UI</b> to cater to
+            user needs and preferences, ensuring that it was both intuitive and
+            efficient. The UI design was then handed over to the development
+            team for implementation.
+          </p>
+          <p class="mb-3">
+            Before actual development commenced, I conducted
+            <b>user testing of the UI prototype</b>. This allowed us to gather
+            valuable feedback on the design and functionality, ensuring that the
+            final product would align with user expectations. It was essential
+            to ensure that the system not only met functional requirements but
+            also provided a delightful user experience.
+          </p>
+          <p class="mb-3">
+            I acted as a <b>communication bridge</b> between the development
+            team and the users. This involved making sure that the development
+            team fully comprehended the user-centric approach and needs. It also
+            entailed facilitating effective communication between users and the
+            development team to address queries, feedback, and potential
+            changes.
+          </p>
+
+          <p class="mb-3">
+            In summary, the project's implementation phase, guided by Design
+            Thinking, was about taking user-centric insights and turning them
+            into a practical solution. My role as a bridge between user-centric
+            design and development ensured a seamless transition, allowing the
+            project to move forward cohesively and ensuring the system's
+            successful realization.
+          </p>
+          <h4 class="mb-3">
+            Results: A Comprehensive Blueprint for Efficient Operations
+          </h4>
+          <div class="container text-center wow fadeInUp mb-3">
+            <img
+              class="img-fluid"
+              width="848"
+              height="340"
+              src="/assets/img/work/bcs1.png"
+              alt="BCS App"
+              title="BCS"
+            />
+          </div>
+          <div class="container text-center wow fadeInUp mb-3">
+            <img
+              class="img-fluid"
+              width="848"
+              height="340"
+              src="/assets/img/work/bcs2.png"
+              alt="BCS App"
+              title="BCS"
+            />
+          </div>
+          <p class="mb-3">
+            The outcome of this project is a meticulously detailed
+            <b>Software Requirement Specification (SRS) document</b> that
+            encompasses every system requirement. The SRS serves as a guiding
+            document for the development team, ensuring that the designed
+            solution is implemented accurately and effectively. Additionally,
+            this project has yielded a <b>user interface (UI) design</b> for the
+            system, setting the course for the development of an intuitive and
+            efficient user interface.
+          </p>
+          <p class="mb-3">
+            Furthermore, the adoption of cutting-edge technologies and tools
+            underscores our commitment to harnessing the latest technological
+            advancements in pursuit of the project's objectives. We have
+            diligently engaged in a series of meetings and discussions with
+            management, users, and supervisors to thoroughly understand the
+            needs and expectations of all stakeholders involved.
+          </p>
+          <p class="mb-3">
+            It is important to note that the project documentation files are of
+            a confidential nature and not accessible for public sharing, as they
+            contain proprietary company information. However, the UI design
+            concept, a critical component of the project, has been made
+            available.
+          </p>
+
+          <div class="text-center mb-3 wow fadeInUp">
+            <iframe
+              style="border: 1px solid rgba(0, 0, 0, 0.1)"
+              width="800"
+              height="450"
+              src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2F5FNgqbkv46lZz3P6uxurtr%2FBCS-Sistem%3Fkind%3D%26node-id%3D12-199%26page-id%3D0%253A1%26scaling%3Dscale-down-width%26starting-point-node-id%3D12%253A199%26type%3Ddesign%26mode%3Ddesign%26t%3Dv9WRHAlGqh2IrMNw-1"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Content -->
+    <!-- Footer -->
+    <div class="vg-footer">
+      <!-- <h1 class="text-center"></h1> -->
+      <div class="container">
+        <div class="row d-flex justify-content-around">
+          <div class="col-md-6 py-3">
+            <div class="footer-info">
+              <p>Where to find me</p>
+              <hr class="divider" />
+              <p class="fs-large fg-white">
+                Kutawaluya, Karawang - West Java 41358 Indonesia
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 py-3">
+            <div class="float-lg-right">
+              <p>Contact me</p>
+              <hr class="divider" />
+              <ul class="list-unstyled">
+                <li>thobisaha@gmail.com</li>
+                <li>+62857-7293-6084</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center mt-3">
+          <div class="col-12">
+            <p class="text-center mb-0 mt-4">
+              Copyright &copy;2023. All right reserved | Inspired template by
+              MacodeId
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- End footer -->
+    <script src="/assets/js/jquery-3.5.1.min.js"></script>
+
+    <script src="/assets/js/bootstrap.bundle.min.js"></script>
+
+    <script src="/assets/vendor/owl-carousel/owl.carousel.min.js"></script>
+
+    <script src="/assets/vendor/perfect-scrollbar/js/perfect-scrollbar.js"></script>
+
+    <script src="/assets/vendor/isotope/isotope.pkgd.min.js"></script>
+
+    <script src="/assets/vendor/nice-select/js/jquery.nice-select.min.js"></script>
+
+    <script src="/assets/vendor/fancybox/js/jquery.fancybox.min.js"></script>
+
+    <script src="/assets/vendor/wow/wow.min.js"></script>
+
+    <script src="/assets/vendor/animateNumber/jquery.animateNumber.min.js"></script>
+
+    <script src="/assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+
+    <script src="/assets/js/google-maps.js"></script>
+    <script src="/assets/js/google-translate.js"></script>
+
+    <script src="/assets/js/topbar-virtual.js"></script>
+    <script src="/assets/js/util.js"></script>
+
+    <script
+      async
+      defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAIA_zqjFMsJM_sxP9-6Pde5vVCTyJmUHM&callback=initMap"
+    ></script>
+
+    <script
+      type="text/javascript"
+      src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
+    ></script>
+  </body>
+</html>
