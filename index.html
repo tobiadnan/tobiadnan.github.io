@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-    <title>Tobi's Page</title>
+    <title>Halaman Tobi</title>
     <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" type="text/css" href="/assets/css/themify-icons.css"/>
     <link rel="stylesheet" type="text/css" href="/assets/css/bootstrap.css" />
@@ -16,18 +16,6 @@
     <link rel="stylesheet" type="text/css" href="/assets/vendor/fancybox/css/jquery.fancybox.min.css"/>
     <link rel="stylesheet" type="text/css" href="/assets/css/virtual.css" />
     <link rel="stylesheet" type="text/css" href="/assets/css/topbar.virtual.css"/>
-    <style>
-      .zoom {
-        transition: transform .3s; /* Animation */
-        width: 55px;
-        height: 55px;
-        margin: 0 auto;
-      }
-      
-      .zoom:hover {
-        transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
-      }
-    </style>
     
   </head>
 
@@ -183,7 +171,8 @@
       <!-- </div> -->
       <!-- End Caption header -->
 
-      <div class="floating-button"><span class="ti-mouse"></span></div>
+      <div class="floating-button"><span class="fg-theme ti-mouse" id="scroll-button" ></span></div>
+
     </div>
 
     <!-- about -->
@@ -192,7 +181,7 @@
         <div class="row">
           <div class="col-lg-4 py-3">
             <div class="img-place wow fadeInUp">
-              <img src="person1.png" alt="Profile Picture" title="Toby's Picture"/>
+              <img src="/content/images/person.png" alt="Profile Picture" title="Toby's Picture"/>
             </div>
           </div>
           <div class="col-lg-6 offset-lg-1 wow fadeInRight">
@@ -205,7 +194,7 @@
               <li>Based In : <b>Karawang, West Java, Indonesia</b></li>
               <li>Ambition : <b>I crave challenges and strive for success.</b></li>
             </ul>
-            <a href="/content/CV-Tobi.pdf">
+            <a href="/content/cv/CV-Tobi.pdf">
               <button class="btn btn-theme-outline">Download CV</button>
             </a>
           </div>
@@ -225,7 +214,7 @@
                   <small><a href="https://www.rosma.ac.id" class="fg-theme" target="_blank" rel="noopener noreferrer">STMIK Rosma</a></small>
                   <p>
                     ✅ Activities and societies: Vice chairman of FKDK Rosma, PKKMB Event Committee <br>
-                    ✅ Publication: Evaluating The Quality of Infoloker Kab.Karawang Website Using Webqual 4.0 Method
+                    ✅ Publication: <a class="fg-theme" href="https://doi.org/10.31849/zn.v5i2.13912" target="_blank" rel="noopener noreferrer"> Evaluating The Quality of Infoloker Kab.Karawang Website Using Webqual 4.0 Method </a>
                   </p>
                 </div>
               </li>
@@ -449,8 +438,8 @@
           <button class="btn btn-theme-outline" data-filter=".analytic">
             Analytic
           </button>
-          <button class="btn btn-theme-outline" data-filter=".ui-ux">
-            UI/UX
+          <button class="btn btn-theme-outline" data-filter=".system">
+            System
           </button>
           <button class="btn btn-theme-outline" data-filter=".web">
             Web
@@ -461,16 +450,16 @@
         <!-- card content -->
         <div class="gridder my-3">
           <!-- ui ux -->
-          <div class="grid-item ui-ux wow zoomIn">
+          <div class="grid-item system wow zoomIn">
             <div
               class="img-place"
               data-src="/assets/img/work/ui-bcs.png" 
               data-fancybox
-              data-caption="<h5 class='fg-theme'><a href='/content/uiux-bcs.html' target='_blank'>BCS UI Design</a></h5> <p>Inventory, Stocks</p>"
+              data-caption="<h5 class='fg-theme'><a href='/content/pages/bcs.html' target='_blank'>Bladder Control Stock</a></h5> <p>Inventory, Stocks, Figma</p>"
             >
               <img src="/assets/img/work/ui-bcs.png" alt="" />
               <div class="img-caption">
-                <h5 class="fg-theme">BCS UI Design</h5>
+                <h5 class="fg-theme">Bladder Control Stock</h5>
                 <p>Inventory, Stocks, Figma</p>
               </div>
             </div>
@@ -478,12 +467,13 @@
           <!-- end of ui ux -->
 
           <!-- analytics -->
+
           <div class="grid-item analytic wow zoomIn">
             <div
               class="img-place"
               data-src="/assets/img/work/credit.png" 
               data-fancybox
-              data-caption="<h5 class='fg-theme'><a href='/content/credit-card.html' target='_blank'>Credit Card Portfolio Dashboard</a></h5> <p>Analytic Dasboard, Fraud Analytic, Looker Studio</p>"
+              data-caption="<h5 class='fg-theme'><a href='/content/pages/credit-card.html' target='_blank'>Credit Card Portfolio Dashboard</a></h5> <p>Analytic Dasboard, Fraud Analytic, Looker Studio</p>"
             >
               <img src="/assets/img/work/credit.png" alt="" />
               <div class="img-caption">
@@ -500,7 +490,7 @@
               class="img-place"
               data-src="/assets/img/work/monbi.png" 
               data-fancybox
-              data-caption="<h5 class='fg-theme'><a href='/content/monbi.html' target='_blank'>Monbi Tracing System</a></h5> <p>Tracing, Expenses</p>"
+              data-caption="<h5 class='fg-theme'><a href='/content/pages/monbi.html' target='_blank'>Monbi Tracing System</a></h5> <p>Tracing, Expenses</p>"
             >
               <img src="/assets/img/work/monbi.png" alt="" />
               <div class="img-caption">
@@ -864,7 +854,7 @@
             </p>
           </div>
           <div class="modal-footer d-flex justify-content-between">
-            <a href="/content/monbi.html" role="button" target='_blank' class="btn btn-theme btn-sm">go to project</a>
+            <a href="/content/pages/monbi.html" role="button" target='_blank' class="btn btn-theme btn-sm">go to project</a>
             <button type="button" class="btn fg-theme" data-dismiss="modal">Close</button>
           </div>
         </div>
@@ -920,7 +910,7 @@
             </p>
           </div>
           <div class="modal-footer d-flex justify-content-between">
-            <a href="#" role="button" target='_blank' class="btn btn-theme btn-sm">go to project</a>
+            <a href="/content/pages/bcs.html" role="button" target='_blank' class="btn btn-theme btn-sm">go to project</a>
             <button type="button" class="btn fg-theme" data-dismiss="modal">Oke</button>
           </div>
         </div>
@@ -1169,7 +1159,7 @@
             </p>
           </div>
           <div class="modal-footer d-flex justify-content-between">
-            <a href="/content/credit-card.html" role="button" target='_blank' class="btn btn-theme btn-sm">go to project</a>
+            <a href="/content/pages/credit-card.html" role="button" target='_blank' class="btn btn-theme btn-sm">go to project</a>
             <button type="button" class="btn fg-theme" data-dismiss="modal">Oke</button>
           </div>
         </div>
@@ -1200,26 +1190,16 @@
     <script src="/assets/vendor/waypoints/jquery.waypoints.min.js"></script>
 
     <script src="/assets/js/google-maps.js"></script>
+    <script src="/assets/js/google-translate.js"></script>
 
     <script src="/assets/js/topbar-virtual.js"></script>
+    <script src="/assets/js/util.js"></script>
 
     <script
       async
       defer
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAIA_zqjFMsJM_sxP9-6Pde5vVCTyJmUHM&callback=initMap"
     ></script>
-
-    <script type="text/javascript">
-      function googleTranslateElementInit() {
-        new google.translate.TranslateElement(
-          {
-            pageLanguage: "en",
-            layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
-          },
-          "google_translate_element"
-        );
-      }
-    </script>
 
     <script
       type="text/javascript"
